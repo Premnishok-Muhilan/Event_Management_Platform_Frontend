@@ -13,7 +13,7 @@ const EventCard = () => {
       try {
         const response = await adminServices.getAllEventsInfo();
         setEvents(response.data.all_event_details); // Ensure this is the correct path to your events array
-        console.log(response.data.all_event_details);
+        //console.log(response.data.all_event_details);
       } catch (err) {
         setError(err.message || "An error occurred while fetching events.");
       } finally {
